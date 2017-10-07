@@ -1,4 +1,6 @@
-# WEBrick
+# Webサーバ起動
+Rails5から、WEBrick→pumaになった？
+
 ### 起動
 rails s
 ### バックグラウンドで起動
