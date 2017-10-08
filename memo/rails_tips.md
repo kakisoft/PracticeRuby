@@ -18,5 +18,5 @@ File.delete(File.expand_path('../../tmp/pids/server.pid',  __FILE__)) rescue
 ```
 role "vagrant" does not exist
 ```
-config/database.yml を編集。  
+config/database.yml を編集。  
 編集内容は、ForkしたリポジトリのReadmeあたりに書いてある・・・はず。
