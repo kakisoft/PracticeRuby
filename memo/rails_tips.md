@@ -14,3 +14,9 @@ File.delete(File.expand_path('../../tmp/pids/server.pid',  __FILE__)) rescue
 [参考サイト](http://d.hatena.ne.jp/icalo35/20130625/p1)
 
 
+## Vagrantで作成した仮想マシン：PostgreSQL起動エラー
+```
+role "vagrant" does not exist
+```
+config/database.yml を編集。  
+編集内容は、ForkしたリポジトリのReadmeあたりに書いてある・・・はず。
