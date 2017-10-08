@@ -1,4 +1,4 @@
-## 再起動時に発生するエラー
+## Webサーバ再起動時にエラーが発生する
 ```
 => Booting Puma
 => Rails 5.0.6 application starting in development on http://localhost:3000
