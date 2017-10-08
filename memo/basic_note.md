@@ -1,14 +1,3 @@
-# Webサーバ起動
-Rails5から、WEBrick→pumaになった？
-
-### 起動
-rails s
-### バックグラウンドで起動
-rails s -d
-### バックグラウンドで起動したWEBrickを停止
- ps ax | grep rails
- kill -KILL \<PID\>
-
 ## 小リファレンス
 ri （使用例：ri Array）
 
