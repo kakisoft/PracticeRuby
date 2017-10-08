@@ -1,0 +1,8 @@
+## 再起動時に発生するエラー
+```
+=> Booting Puma
+=> Rails 5.0.6 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+A server is already running. Check /vagrant/mymemo/tmp/pids/server.pid.
+Exiting
+```
