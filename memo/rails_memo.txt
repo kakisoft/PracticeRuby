@@ -1,8 +1,20 @@
 rails new mymemo
 rails g scaffold Memo title:string body:text
 rails db:migrate
+
 ===================================
 rails new myblog
+rails db:migrate
+
+rails g model Post title:string body:text
+rails c （consoleでも可）
+＜↓↓以下、コンソール↓↓＞
+p = Post.new(title: 'title1', body:'body1')
+p.save
+Post.create(title:'title2', body:'body2')  #=> newとsaveを同時に
+Post.all  #=> 登録データ確認
+quit
+＜↑↑コンソールここまで↑↑＞
 ===================================
 
 
