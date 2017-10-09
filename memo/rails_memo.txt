@@ -6,6 +6,8 @@ rails db:migrate
 rails new myblog
 rails db:migrate
 
+
+【model】
 rails g model Post title:string body:text
 rails c  # （consoleでも可）
 ＜↓↓以下、コンソール↓↓＞
@@ -15,13 +17,27 @@ Post.create(title:'title2', body:'body2')  #=> newとsaveを同時に
 Post.all  #=> 登録データ確認
 quit
 ＜↑↑コンソールここまで↑↑＞
-===================================
+-----------------------------------
 ## 初期化
 rails db:migrate:reset
 
+-----------------------------------
+【model】
+rails g controller Posts
+confit/routes.rb にルーティングを記述。
+（例）
+```
+  resources :posts
+```
+その後、app/controllers に、処理を記述。
+（例）
+```
+＜posts_controller.rb＞
+    def index
+        @posts = Post.all.order(created_at: 'desc')
+    end
+```
 ===================================
-
-
 ・app
 ・config
 ・db
