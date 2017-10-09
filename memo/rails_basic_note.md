@@ -13,12 +13,20 @@ rails s -d
 ````
 rails s -b 192.168.33.10 -p 3000 -d
 ````
-### バックグラウンドで起動したWEBrickを停止
+### バックグラウンドで起動したWebサーバを停止
 ```
 kill -9 `cat tmp/pids/server.pid`
 ```
 
-
+## プロセスを検索
+pumaの場合
+```
+ps aux | grep puma
+```
+WEBrickの場合
+```
+ps ax | grep rails
+```
 
 
 
