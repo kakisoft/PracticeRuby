@@ -1,1 +1,2 @@
 rails g scaffold Memo title:string body:text
+rails db:migrate
