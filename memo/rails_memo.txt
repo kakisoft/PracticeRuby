@@ -7,7 +7,7 @@ rails new myblog
 rails db:migrate
 
 rails g model Post title:string body:text
-rails c （consoleでも可）
+rails c  # （consoleでも可）
 ＜↓↓以下、コンソール↓↓＞
 p = Post.new(title: 'title1', body:'body1')
 p.save
@@ -17,6 +17,8 @@ quit
 ＜↑↑コンソールここまで↑↑＞
 ===================================
 
+
+===================================
 
 
 ・app
