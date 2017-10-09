@@ -18,13 +18,12 @@ select * from posts;
 quit
 ```
 # 初期データ登録
-db/seeds.rb に記述。  
-（例）  
+db/seeds.rb に記述。（以下、記述例）  
 ```rb
 5.times do |i|
   Post.create(title:"title #{i}", body:"body #{i}")
 end
-'''
+```
 記述後、以下を実行。
 ```
 rails db:seed
