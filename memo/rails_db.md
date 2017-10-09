@@ -22,6 +22,10 @@ db/seeds.rb に記述。
 ```rb
 #（例）
 5.times do |i|
-  Post.create(title:"title #{i}", "body:#{i}")
-dne
+  Post.create(title:"title #{i}", body:"body #{i}")
+end
 '''
+記述後、以下を実行。
+```
+rails db:seed
+```
