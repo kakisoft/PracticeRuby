@@ -18,9 +18,9 @@ select * from posts;
 quit
 ```
 ### 初期データ登録
-db/seeds.rb に記述。
+db/seeds.rb に記述。  
+（例）  
 ```rb
-#（例）
 5.times do |i|
   Post.create(title:"title #{i}", body:"body #{i}")
 end
