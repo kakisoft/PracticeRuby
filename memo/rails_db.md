@@ -17,7 +17,7 @@ select * from posts;
 ```
 quit
 ```
-### 初期データ登録
+# 初期データ登録
 db/seeds.rb に記述。  
 （例）  
 ```rb
