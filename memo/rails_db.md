@@ -13,3 +13,7 @@ rails db  # （dbconsoleでも可）
 （例）
 select * from posts;
 ```
+## 終了
+```
+quit
+```
