@@ -1,2 +1,13 @@
+rails new mymemo
 rails g scaffold Memo title:string body:text
 rails db:migrate
+===================================
+rails new myblog
+===================================
+
+
+
+・app
+・config
+・db
+
