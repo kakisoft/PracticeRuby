@@ -22,7 +22,7 @@ quit
 rails db:migrate:reset
 
 -----------------------------------
-【model】
+
 rails g controller Posts
 confit/routes.rb にルーティングを記述。
 （例）
@@ -37,6 +37,20 @@ confit/routes.rb にルーティングを記述。
     @posts = Post.all.order(created_at: 'desc')
   end
 ```
+
+【view】
+Postsコントローラのindexアクションに対応するviewは、
+app/views/index.html.erb
+（例）
+```
+<h2>My Posts</h2>
+<ul>
+<% @posts.each do |post| %>
+<li><%= post.title %></li>
+<% end %>
+</ul>
+```
+
 ===================================
 ・app
 ・config
