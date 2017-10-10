@@ -30,3 +30,16 @@ p 52.6.ceil   # 53　※切り上げ
 String Class
 Float Class
 =end
+
+puts "he\"llo"   #=> he"llo
+puts 'he\'llo'   #=> he'llo
+puts %Q(he"llo)  #=> he"llo
+puts %q(he"llo)  #=> he"llo
+puts %(he'llo)   #=> he'llo
+
+p ["red","blue"]  #=> ["red", "blue"]
+p %W(red blue)    #=> ↑と同一
+
+p ['pink','yellow']  #=> ["pink", "yellow"]
+p %w(pink yellow)    #=> ↑と同一
+
