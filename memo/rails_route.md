@@ -2,7 +2,8 @@
 ```
 rails routes
 ```
-
+  
+  
 ### rootパス
 rootパスは、```config/routes.rb```に記述。
 （例）
