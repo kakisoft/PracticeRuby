@@ -5,7 +5,7 @@ rails routes
   
   
 ### rootパス
-rootパスは、```config/routes.rb```に記述。
+rootパスは、```config/routes.rb```に記述。  
 （例）
 ```rb
 Rails.application.routes.draw do
