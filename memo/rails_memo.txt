@@ -63,6 +63,21 @@ body部分は、<%= yield %>
 アプリ全体に適用される cssファイルは、
 app/assets/stylesheets/application.css
 
+
+link_to <リンク先名>, <リンク先>
+リンク先は、「rails routes」で出てくる Prefixに、「_path」を付けた値。
+（例）
+link_to post.title, post_path(post.id)
+link_to post.title, post_path(post)
+
+
+posts_controller.rb
+```
+  def show
+    @post = Post.find(params[:id])  # ※引数の理由は、ルーティングで「:id」となっているから。
+  end  
+```
+
 ===================================
 ・app
 ・config
