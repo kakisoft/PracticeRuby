@@ -28,3 +28,12 @@ end
 ```
 rails db:seed
 ```
+
+# migrateコマンド
+### rake db:migrate:reset
+DB を drop した後、通常通りのマイグレート（db:migrate）が行われる。  
+db/migrate/**.rb が古い順から全て実行される。
+
+### rake db:reset
+db/schema.rb からDBを作成。  
+db/migrate/**.rb は使用されない。
