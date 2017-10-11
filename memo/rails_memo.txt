@@ -1,5 +1,6 @@
 rakeコマンドがRails 5ではrailsコマンドで実行できるようになっている。
 
+ヘルパー・・・viewで使えるメソッド
 ===================================
 rails new mymemo
 rails g scaffold Memo title:string body:text
