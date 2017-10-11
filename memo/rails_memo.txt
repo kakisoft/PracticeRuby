@@ -54,6 +54,14 @@ app/views/index.html.erb
 </ul>
 ```
 
+body以外のソース（ヘッダとかタイトルとか）は、
+views/layouts/application.html.rb
+にて定義されている。
+body部分は、<%= yield %>
+
+アプリ全体に適用される cssファイルは、
+app/assets/stylesheets/application.css
+
 ===================================
 ・app
 ・config
