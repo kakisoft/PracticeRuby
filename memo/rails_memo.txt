@@ -77,6 +77,26 @@ posts_controller.rb
     @post = Post.find(params[:id])  # ※引数の理由は、ルーティングで「:id」となっているから。
   end  
 ```
+その後、app/views/posts/show.html.erb を作成。
+
+===================================
+【ロゴ】
+app\assets\images に、画像を配置。（logo.png 等）
+その後、views/layouts/application.html.rb 等に記述。
+<h1><%= image_tag "logo.png" %></h1>
+
+cssを適用する場合、こんな感じ。
+<%= image_tag "logo.png" , class: "logo" %>
+app/assets/stylesheets/application.css に記述。
+```
+.logo {
+    width: 60px;
+    height: 50px;
+}
+```
+ロゴにリンクを張る。（例：root）
+<%= link_to image_tag("logo.png" , class: "logo"), root_path %>
+root_pathでなく、他のパスにしたい場合、rails routes 等で確認。Prefixに「_path」を付けた値を設定。
 
 ===================================
 ・app
