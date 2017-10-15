@@ -27,7 +27,7 @@ end
 10.times { |i| puts "#{i} Hi!"}  # do, end を{}に変えて、1行にまとめたバージョン。
 
 #===========================
-#         while
+#         WHILE
 #===========================
 i = 0 
 while i < 10 do
@@ -52,3 +52,17 @@ for name, score in {takeda:200, uesugi:400}
 end
   
 
+#===========================
+#         loop
+#===========================
+i = 0
+loop do
+  i += 1
+  if i % 2 == 0 then
+    next  # 次のループ処理へ
+  end
+  if i >= 7 then
+    break  # ループを抜ける
+  end
+  p i
+end
