@@ -28,5 +28,12 @@ WEBrickの場合
 ps ax | grep rails
 ```
 
+## gem基本操作
+```
+gem update
+gem install <gem名>
+gem install <gem名> -v <バージョン>
+gem update <gem名>
+```
 
 
