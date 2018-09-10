@@ -21,11 +21,28 @@ a1.uniq!
 i=0
 for v1 in a1
   i +=1
-  if i % 12 == 0
-    p "---"
+  if i == 1
+    p "@snap[west]"
   end
+  if i == 13
+    p "@snapend"
+    p ""
+  end
+
+  if i == 13
+    p "@snap[east]"
+  end
+
   p v1 + "  "
+
+  if i == 24
+    p "@snapend"
+    p "---"
+    i = 0
+  end  
 end
+
+# 一時しのぎに書いたとはいえ、ダサすぎてゲロ吐きそう
 
 =begin
 
@@ -42,3 +59,4 @@ end
 <i class="far fa-check-square"></i>
 
 =end
+
