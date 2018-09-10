@@ -43,10 +43,13 @@ for i in 15..20 do  # doは省略可
   p i  # 15～20まで表示
 end
 
+# Array
+array = Array["red","blue","yellow"]
 for color in ["red","blue","yellow"]
   p color
 end
-  
+
+# <key, value>   <hash>
 for name, score in {takeda:200, uesugi:400}
   puts "#{name}: #{score}"
 end
@@ -66,3 +69,6 @@ loop do
   end
   p i
 end
+
+
+
