@@ -1,0 +1,6 @@
+https://fontawesome.com/how-to-use/on-the-web/setup/upgrading-from-version-4
+
+fab
+fas or fa
+far
+fal
