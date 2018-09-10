@@ -2,18 +2,25 @@ require 'yaml'
 
 
 c1 = YAML.load_file('categories.yml')
+a1 = []
 
-c1.each do |key1, val1|
-  val1.each do |key2, val2|
-    if key2 == "icons"
-      val2.each do |val3|
-        s = "@fa[" + val3 + "](" + val3 + ")"
-        p s
+c1.each do |k1, v1|
+  v1.each do |k2, v2|
+    if k2 == "icons"
+      v2.each do |v3|
+        s = "@fa[" + v3 + "](" + v3 + ")"
+        a1.push(s)
       end    
     end
   end  
 end
 
+# a1.uniq
+a1.uniq!
+
+for v1 in a1
+  p v1
+end
 
 =begin
 

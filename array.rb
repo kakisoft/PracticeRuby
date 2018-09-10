@@ -14,3 +14,12 @@ p colors #=> ["pink", "white", "black", "gold", "silver"]
 
 p colors.size  #=> 5
 p colors.sort  #=> ["black", "gold", "pink", "silver", "white"]
+
+
+#===========================
+#         
+#===========================
+array = Array["red","blue","yellow"]
+for color in array
+  p color
+end
