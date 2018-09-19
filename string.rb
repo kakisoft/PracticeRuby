@@ -19,3 +19,16 @@ puts name2          #=> YAMADA
 name3 = "sawada"
 p name3.empty?        #=> false 
 p name3.include?("s") #=> true
+
+
+s = "hello"
+p s.rjust(15)        #=> "          hello"
+p s.rjust(15, "-*")  #=> "-*-*-*-*-*hello"
+
+s = "hello"
+p s.center(15)       #=> "     hello     "
+p s.center(15, "-*") #=> "-*-*-hello-*-*-"
+
+s = "hello"
+p s.ljust(15)       #=> "hello          "
+p s.ljust(15, "-*") #=> "hello-*-*-*-*-*"
