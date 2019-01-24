@@ -5,6 +5,10 @@ brew install rbenv ruby-build
 ※ ruby-buildは必要に応じて
 
 ```
+## インストールできるバージョンの一覧
+rbenv install -l
+
+
 ## version指定してinstall
 rbenv install 2.3.5
 
@@ -14,23 +18,16 @@ rbenv version
 ※↓と混同しやすい
 
 
- ## 使用可能なバージョン一覧を確認）
-rbenv versions
-
-（インストールできるバージョンの一覧）
-rbenv install -l
-
-
-（現在のバージョンを確認）
+## 使用可能なバージョン一覧を確認）
 rbenv versions
 「*」が付いているものが現在のバージョン。
 
 
-（使用するバージョンを変更：グローバル）
+## 使用するバージョンを変更：グローバル
 rbenv global 2.5.1
 
 
-（使用するバージョンを変更：ローカル）
+## 使用するバージョンを変更：ローカル
 rbenv local 2.1.2
 
 
