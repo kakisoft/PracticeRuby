@@ -3,7 +3,7 @@
 
 ## インストール
 gem install bundler
-（sudo がいるかも。）
+（sudo が要るかも。）
 
 ## バージョン確認
 bundle -v
