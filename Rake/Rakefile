@@ -1,0 +1,20 @@
+task :default => :daily_report
+  
+#################
+# rake
+#   引数省略時、↑を実行
+#################
+desc "１日のトレーニング内容を記録する"
+task :daily_report do
+  puts "rake を実行しました。"
+end
+
+#################
+# rake t1
+#################
+task :t1 do
+  puts "task t1 を実行しました。"
+end
+
+
+
