@@ -1,5 +1,8 @@
 # Bundler
 
+## コマンド
+bundle exec で実行すると，そのプロジェクトの Gemfileで指定された環境で実行する事ができるようになる。
+
 
 ## インストール
 gem install bundler
