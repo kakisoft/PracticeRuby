@@ -1,20 +1,63 @@
 task :default => :daily_report
   
-#################
-# rake
-#   引数省略時、↑を実行
-#################
+##################
+#  rake
+#    引数省略時、↑を実行
+##################
 desc "１日のトレーニング内容を記録する"
 task :daily_report do
   puts "rake を実行しました。"
 end
 
-#################
-# rake t1
-#################
+##################
+#  rake t1
+##################
 task :t1 do
   puts "task t1 を実行しました。"
 end
 
+#---------------------------
+# bundle exec rake dev:up
+#---------------------------
 
+##################
+#  rake dev:up
+#  rake dev:init
+#  rake dev:up
+##################
+namespace :dev do
+  ##################
+  #  rake dev:init
+  ##################
+  task :init do
+    puts "task init を実行しました。"
 
+    # config_docker_compose
+    # sh 'docker-compose stop'
+    # sh 'docker-compose rm'
+    # sh 'docker-compose up -d'
+    # sh 'sleep 20'
+    # sh 'docker exec -it $(docker-compose ps -q db) sh /misc/db/run_db.sh'
+  end
+
+  ##################
+  #  rake dev:up
+  ##################
+  task :up do
+    puts "task up を実行しました。"
+
+    # config_docker_compose
+    # sh 'docker-compose up -d'
+  end
+
+  ##################
+  #  rake dev:stop
+  ##################
+  task :stop do
+    puts "task stop を実行しました。"
+
+    # config_docker_compose
+    # sh 'docker-compose stop'
+  end
+
+end
