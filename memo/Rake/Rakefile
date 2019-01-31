@@ -7,6 +7,7 @@ task :default => :daily_report
 desc "１日のトレーニング内容を記録する"
 task :daily_report do
   puts "rake を実行しました。"
+  sh 'echo "sh echo"'   #=>  シェルスクリプトが実行可能
 end
 
 ##################
