@@ -21,3 +21,9 @@ bundle exec gem list
 
 で、デフォルトの内容と bundle の内容の差を確認できる。
 ```
+
+
+## 診断
+```
+bundle doctor
+```
