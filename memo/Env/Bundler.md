@@ -46,9 +46,10 @@ which bundle
 
 
 rbenv exec gem install bundler
-rbenv rehash 
+rbenv rehash
 
 
+＜参考＞
 https://teratail.com/questions/74708
 ```
 
