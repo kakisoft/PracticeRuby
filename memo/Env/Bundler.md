@@ -59,7 +59,12 @@ ERROR:  While executing gem ... (Gem::FilePermissionError)
 which ruby
 which bundle
 で表示されるパスが異なれば、それが原因。
-
+-------------------------------------------
+uskaki301-3:rails kaki$ which ruby
+/usr/bin/ruby
+uskaki301-3:rails kaki$ which bundler
+/usr/local/bin/bundler
+-------------------------------------------
 
 
 rbenv exec gem install bundler
@@ -73,3 +78,64 @@ https://teratail.com/questions/74708
 
 
 https://qiita.com/hyshhryk/items/7e728ad57d963454b142
+
+
+_______________________________________________________________________
+# まだエラー出てる
+
+**gem environment**
+```
+RubyGems Environment:
+  - RUBYGEMS VERSION: 3.0.2
+  - RUBY VERSION: 2.3.7 (2018-03-28 patchlevel 456) [universal.x86_64-darwin18]
+  - INSTALLATION DIRECTORY: /Library/Ruby/Gems/2.3.0
+  - USER INSTALLATION DIRECTORY: /Users/kaki/.gem/ruby/2.3.0
+  - RUBY EXECUTABLE: /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby
+  - GIT EXECUTABLE: /usr/bin/git
+  - EXECUTABLE DIRECTORY: /usr/bin
+           ###############
+           #↑↑↑ こいつ↑↑↑ #
+           ###############
+
+  - SPEC CACHE DIRECTORY: /Users/kaki/.gem/specs
+  - SYSTEM CONFIGURATION DIRECTORY: /Library/Ruby/Site
+  - RUBYGEMS PLATFORMS:
+    - ruby
+    - universal-darwin-18
+  - GEM PATHS:
+     - /Library/Ruby/Gems/2.3.0
+     - /Users/kaki/.gem/ruby/2.3.0
+     - /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/gems/2.3.0
+```
+
+### パスを通す
+```
+echo 'export PATH="/usr/bin:$PATH"' >> ~/.bash_profile 
+source ~/.bash_profile
+
+bundle -v
+```
+```
+$ echo $HOME
+/home/dev
+
+$ echo 'export PATH="$HOME/.rbenv/versions/2.0.0-p353/bin:$PATH"' >> ~/.bash_profile 
+
+$ source ~/.bash_profile 
+
+$ bundle -v
+Bundler version 1.7.3
+```
+
+
+```
+echo 'export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"' >> ~/.bash
+
+
+
+
+```
+
+
+
+
