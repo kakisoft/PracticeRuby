@@ -27,3 +27,29 @@ bundle exec gem list
 ```
 bundle doctor
 ```
+
+_______________________________________________________________________
+# インストールエラー発生時
+```
+sudo gem install bundler
+
+ERROR:  While executing gem ... (Gem::FilePermissionError)
+    You don't have write permissions for the /usr/bin directory.
+
+
+
+
+which ruby
+which bundle
+で表示されるパスが異なれば、それが原因。
+
+
+
+rbenv exec gem install bundler
+rbenv rehash 
+
+
+https://teratail.com/questions/74708
+```
+
+
