@@ -43,4 +43,11 @@ brew upgrade rbenv ruby-build
 ## rbenv rehash
 ~/.rbenv/versions/2.x.y/bin/ 以下に置いてあるコマンド群を ~/.rbenv/shims/以下に置いて使えるようにする  
 　  
-<http://dqn.sakusakutto.jp/2014/02/rbenv_rehash_what_it_does.html>
+http://dqn.sakusakutto.jp/2014/02/rbenv_rehash_what_it_does.html  
+
+
+
+## rbenvでバージョンがうまく切り替わらなかった時にやったこと
+https://qiita.com/akatsuki174/items/c0384b9903b4b5cbbdaf  
+
+
