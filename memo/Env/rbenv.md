@@ -40,3 +40,7 @@ brew upgrade rbenv ruby-build
 
 ```
 
+## rbenv rehash
+~/.rbenv/versions/2.x.y/bin/ 以下に置いてあるコマンド群を ~/.rbenv/shims/以下に置いて使えるようにする  
+　  
+<http://dqn.sakusakutto.jp/2014/02/rbenv_rehash_what_it_does.html>
