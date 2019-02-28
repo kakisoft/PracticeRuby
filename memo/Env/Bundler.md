@@ -20,6 +20,9 @@ Bundler
 https://qiita.com/oshou/items/6283c2315dc7dd244aef
 ```
 
+## bundle install
+
+
 
 ## インストール
 gem install bundler
@@ -139,3 +142,31 @@ echo 'export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"' >> ~/.bash
 
 ### 
 vi ~/.bashrc
+
+
+
+____________________________________________________________________
+
+## gem installでpermissionエラーになった時の対応方法
+https://qiita.com/nishina555/items/63ebd4a508a09c481150  
+
+```
+uskaki301-3:~ kaki$ gem install bundler
+ERROR:  While executing gem ... (Gem::FilePermissionError)
+    You don't have write permissions for the /Library/Ruby/Gems/2.3.0 directory.
+```
+
+「システムのrubyを利用しているため、権限不足でgemのインストールができない可能性が高い。」  
+とのこと。
+
+rbenv で対処。
+
+
+
+## You must use Bundler 2 or greater with this lockfile.
+https://qiita.com/yoshijbbsk1121/items/87250501b32c6433943e  
+
+
+
+
+

@@ -17,3 +17,24 @@ Gemをインストールする場合はgem install [gemname] [options]コマン�
 "~> 2.0"  2.xの最新バージョン
 "~> 2.1.0"  2.1.xの最新バージョン
 ```
+
+
+_________________________________________________________________
+
+
+## gem installでpermissionエラーになった時の対応方法
+https://qiita.com/yoshijbbsk1121/items/87250501b32c6433943e
+
+```
+$ which gem
+/usr/bin/gem
+$ which ruby
+/usr/bin/ruby
+```
+　 ↓
+```
+$ which ruby
+/Users/toshiharu.nishina/.rbenv/shims/ruby
+$ which gem
+/Users/toshiharu.nishina/.rbenv/shims/gem
+```
