@@ -1,3 +1,8 @@
+!!! note
+	gem install bundler が、「You must use Bundler 2 or greater with this lockfile」と出た場合、
+	bash でログインしなおしてみる。
+
+
 # Bundler
 
 ## コマンド
@@ -25,8 +30,15 @@ https://qiita.com/oshou/items/6283c2315dc7dd244aef
 
 
 ## インストール
+```
 gem install bundler
-（sudo が要るかも。）
+  （sudo が要るかも。）→ドツボにハマる系のエラー  
+
+
+gem install bundler -v 1.14.5
+
+1.7.3
+```
 
 ## バージョン確認
 bundle -v
