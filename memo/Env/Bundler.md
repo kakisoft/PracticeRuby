@@ -179,6 +179,14 @@ rbenv で対処。
 https://qiita.com/yoshijbbsk1121/items/87250501b32c6433943e  
 
 
+____________________________________________________________________
 
 
+## _
+```
+gem install bundler
+bundle install
+
+bundle exec rails c
+```
 
