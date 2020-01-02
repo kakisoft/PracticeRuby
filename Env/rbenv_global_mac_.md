@@ -24,6 +24,13 @@ rbenvでRubyをバージョンアップする場合、
 /Users/ユーザー/.rbenv/shims/ruby  
 を参照している必要がある  
 
+```
+which ruby
+```
+で参照先を確認。  
+/usr/bin/ruby だったら、参照先を変える必要がある。
+
+
 ### シェル設定
 ```
 rbenv init
